@@ -8,6 +8,16 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .header-banner {
   background-color: #0052FF;
   text-align: center;
@@ -21,6 +31,7 @@ body {
 }
 
 .navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +89,7 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
 
 .left-section {
@@ -85,10 +97,12 @@ body {
   padding: 0 20px;
 }
 
-.left-section
-img {
-  max-width: 636px;
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
+
 
 .right-section {
   width: 40%;
@@ -112,13 +126,413 @@ img {
 
 .signup-container {
   display: flex;
+  align-items: center;
   gap: 28px;
+  margin-bottom: 24px;
 }
 
 .input {
   height: 56px;
-  width: 280px;
+  max-width: 280px;
   padding: 18px;
   border: 1px solid rgb(236, 239, 241);
   border-radius: 8px;
+}
+
+.signup-container
+.signup-btn {
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 32px;
+  background-color: #0052FF;
+  color: #fff;
+}
+
+.input-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #0A0B0D;
+}
+
+.offer-text {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Banner */
+
+.banner {
+  height: 274px;
+  background-color: #0a0b0d;
+  display: flex;
+  justify-content: center;
+}
+
+.left-banner {
+  /* width: 30%; */
+}
+
+.banner img {
+  height: 274px;
+}
+
+.right-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0 16px 24px;
+  color: #fff;
+}
+
+.banner h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.banner p {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 700px;
+}
+
+.banner button {
+  height: 56px;
+  width: 100%;
+  width: 228px;
+  border-radius: 56px;
+  border: none;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #578BFA;
+  padding: 0 32px;
+}
+
+/* Earn Section */
+
+.earn {
+  height: 550px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.earn-inner {
+  height: 394px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0 0 32px;
+  border-top: 1px solid rgba(91, 97, 110, 0.2);
+}
+
+.left-earn {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.earn h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+.earn p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 500px;
+}
+
+.earn button {
+  height: 56px;
+  width: max-content;
+  border-radius: 56px;
+  border: none;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #0052FF;
+  color: #fff;
+  padding: 0 32px;
+}
+
+.right-earn {
+  width: 100%;
+  max-width: 459px;
+}
+
+.earn img {
+  width: 100%;
+  max-width: 298px;
+}
+
+/* Explore Section */
+
+.explore {
+  background-color: #F5F8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 80px 48px;
+}
+
+.left-explore {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.explore h2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.explore p {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.explore button {
+  height: 56px;
+  width: max-content;
+  border-radius: 56px;
+  border: none;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #0052FF;
+  color: #fff;
+  padding: 0 32px;
+}
+
+.right-explore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 50%;
+}
+
+.crypto-card {
+  height: 190px;
+  width: 190px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+  border-radius: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; /* Ensure padding and border are included in the dimensions */
+}
+
+
+.crypto-card img {
+  height: 45px;
+}
+
+.card-top h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0a0b0d;
+  padding-top: 8px;
+}
+
+.card-top p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5b616e;
+  line-height: 24px;
+}
+
+.card-bottom p {
+  color: #098551;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.crypto-card
+p.red {
+  color: #cf202f;
+}
+
+.crypto-card
+p.grey {
+  color: #5b616e;
+}
+
+/* Coinbase Section */
+.coinbase {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  padding-right: 20px;
+}
+
+.left-coinbase {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.left-coinbase img {
+  max-width: 373px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.right-coinbase {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-right {
+  width: 100%;
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.coinbase h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #0A0B0D;
+}
+
+.coinbase h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0A0B0D;
+}
+
+.signup-btn {
+  height: 56px;
+  padding: 0 32px;
+  width: max-content;
+  border-radius: 32px;
+  background-color: #0052FF;
+  color: #fff;
+}
+
+/* Advanced Section */
+.advanced {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  padding-right: 20px;
+}
+
+.left-advanced {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.left-advanced img {
+  max-width: 373px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.right-advanced {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-right {
+  width: 100%;
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.advanced h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #0A0B0D;
+}
+
+.advanced h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0A0B0D;
+}
+
+.signup-btn {
+  height: 56px;
+  padding: 0 32px;
+  width: max-content;
+  border-radius: 32px;
+  background-color: #0052FF;
+  color: #fff;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 80px 0
+}
+.card {
+  height: 486px;
+  width: 100%;
+  max-width: 498px;
+  background-color: red;
+  border-radius: 24px;
+  overflow: hidden;
+  border: none;
+}
+
+.card img {
+  width: 100%;
 }

@@ -7,27 +7,30 @@
     <title>Coinbase</title>
   </head>
   <body>
-    <div class="header-banner">
-      <a href="#"> Get up to $200 for getting started → </a>
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-banner">
+        <a href="#"> Get up to $200 for getting started → </a>
+      </div>
+
+      <nav class="navbar">
+        <img class="logo" src="images/logo.svg" alt="coinbase logo" />
+
+        <div class="links-container">
+          <a href="#">Explore</a>
+          <a href="#">Learn</a>
+          <a href="#">Individuals</a>
+          <a href="#">Businesses</a>
+          <a href="#">Developers</a>
+          <a href="#">Company</a>
+        </div>
+
+        <div class="buttons-container">
+          <button class="btn login-btn">Log in</button>
+          <button class="btn signup-btn">Sign up</button>
+        </div>
+      </nav>
     </div>
-
-    <nav class="navbar">
-      <img class="logo" src="images/logo.svg" alt="coinbase logo" />
-
-      <div class="links-container">
-        <a href="#">Explore</a>
-        <a href="#">Learn</a>
-        <a href="#">Individuals</a>
-        <a href="#">Businesses</a>
-        <a href="#">Developers</a>
-        <a href="#">Company</a>
-      </div>
-
-      <div class="buttons-container">
-        <button class="btn login-btn">Log in</button>
-        <button class="btn signup-btn">Sign up</button>
-      </div>
-    </nav>
 
     <!-- Hero Section -->
     <main class="hero">
@@ -42,13 +45,322 @@
           and use crypto.
         </h2>
 
+        <label class="input-label" for="email">Email address</label>
         <div class="signup-container">
-          <input class="input" type="email" />
+          <div class="input-container">
+            <input
+              class="input"
+              placeholder="satoshi@nakamoto.com"
+              type="email"
+            />
+          </div>
           <button class="btn signup-btn">Sign up</button>
         </div>
 
-        <p>Sign up and get up to $200 in crypto¹</p>
+        <p class="offer-text">Sign up and get up to $200 in crypto¹</p>
       </div>
     </main>
+
+    <!-- Hero Banner -->
+    <section class="banner">
+      <div class="left-banner">
+        <img src="/images/hero-banner.webp" alt="hero-banner" />
+      </div>
+      <div class="right-banner">
+        <h2>Earn 5.55% APY on USDC</h2>
+        <p>
+          Join Coinbase One today and get 5.55% APY on up to $30,000 USDC, zero
+          trading fees, priority support, and more.
+        </p>
+        <button>Claim free trial →</button>
+      </div>
+    </section>
+
+    <!-- Earn Section -->
+    <section class="earn">
+      <div class="earn-inner">
+        <div class="left-earn">
+          <h2>Get up to $400 in rewards with Coinbase</h2>
+          <p>
+            Coinbase users can earn up to $400 on average just by taking
+            advantage of our rewards.²
+          </p>
+          <button>Start earning</button>
+        </div>
+        <div class="right-earn">
+          <img src="/images/earn.webp" alt="hero-banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+      <div class="left-explore">
+        <h2>Explore crypto like Bitcoin, Ethereum, and Dogecoin</h2>
+        <p>
+          Simply and securely buy, sell, and manage hundreds of
+          cryptocurrencies.
+        </p>
+        <button>See more assets</button>
+      </div>
+      <div class="right-explore">
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/bitcoin.png" alt="bitcoin" />
+            <h4>Bitcoin</h4>
+            <p>$66,543.51</p>
+          </div>
+          <div class="card-bottom">
+            <p>↑ 0.66%</p>
+          </div>
+        </div>
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/ethereum.png" alt="ethereum" />
+            <h4>Ethereum</h4>
+            <p>$3,599.29</p>
+          </div>
+          <div class="card-bottom">
+            <p>↑ 1.56%</p>
+          </div>
+        </div>
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/tether.png" alt="tether" />
+            <h4>Tether</h4>
+            <p>$1.00</p>
+          </div>
+          <div class="card-bottom">
+            <p class="red">↓ 0.66%</p>
+          </div>
+        </div>
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/solana.png" alt="solana" />
+            <h4>Solana</h4>
+            <p>$149.07</p>
+          </div>
+          <div class="card-bottom">
+            <p>↑ 3.61%</p>
+          </div>
+        </div>
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/usdc.png" alt="usdc" />
+            <h4>USDC</h4>
+            <p>$1.00</p>
+          </div>
+          <div class="card-bottom">
+            <p class="grey">0.00%</p>
+          </div>
+        </div>
+        <div class="crypto-card">
+          <div class="card-top">
+            <img src="/images/xrp.png" alt="xrp" />
+            <h4>XRP</h4>
+            <p>$0.49</p>
+          </div>
+          <div class="card-bottom">
+            <p class="red">↓ 0.42%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coinbase Section -->
+    <section class="coinbase">
+      <div class="left-coinbase">
+        <img src="images/coinbase-section.webp" alt="hero" />
+      </div>
+
+      <div class="right-coinbase">
+        <div class="inner-right">
+          <div class="section-header">
+            <svg
+              aria-label="Coinbase logo"
+              height="32"
+              role="img"
+              viewBox="0 0 48 48"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Coinbase logo</title>
+              <path
+                d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"
+                fill="#0052FF"
+              ></path>
+            </svg>
+            <h3>COINBASE</h3>
+          </div>
+          <h1>Buy, sell, and store hundreds of cryptocurrencies</h1>
+          <h2>
+            From Bitcoin to Dogecoin, we make it easy to buy and sell
+            cryptocurrency. Protect your crypto with best in class cold storage.
+          </h2>
+
+          <button class="btn signup-btn">Sign up now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced Section -->
+    <section class="advanced">
+      <div class="left-advanced">
+        <img src="images/advanced-section.webp" alt="hero" />
+      </div>
+
+      <div class="right-advanced">
+        <div class="inner-right">
+          <div class="section-header">
+            <svg
+              aria-label="Coinbase logo"
+              height="32"
+              role="img"
+              viewBox="0 0 48 48"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Coinbase logo</title>
+              <path
+                d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"
+                fill="#0052FF"
+              ></path>
+            </svg>
+            <h3>ADVANCED</h3>
+          </div>
+          <h1>Powerful tools, designed for the advanced trader</h1>
+          <h2>
+            Powerful analytical tools with the safety and security of Coinbase
+            deliver the ultimate trading experience. Tap into sophisticated
+            charting capabilities, real-time order books, and deep liquidity
+            across hundreds of markets.
+          </h2>
+
+          <button class="btn signup-btn">Start trading</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coinbase One Section -->
+    <section class="advanced">
+      <div class="left-advanced">
+        <img src="images/coinbase-one-section.webp" alt="hero" />
+      </div>
+
+      <div class="right-advanced">
+        <div class="inner-right">
+          <div class="section-header">
+            <svg
+              aria-label="Coinbase logo"
+              height="32"
+              role="img"
+              viewBox="0 0 48 48"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Coinbase logo</title>
+              <path
+                d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"
+                fill="#0052FF"
+              ></path>
+            </svg>
+            <h3>COINBASE ONE</h3>
+          </div>
+          <h1>Zero trading fees, more rewards</h1>
+          <h2>
+            Get more out of crypto with one membership: zero trading fees,
+            boosted rewards, priority support, and more.
+          </h2>
+
+          <button class="btn signup-btn">Claim free trial</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wallet Section -->
+    <section class="advanced">
+      <div class="left-advanced">
+        <img src="images/wallet-section.webp" alt="hero" />
+      </div>
+
+      <div class="right-advanced">
+        <div class="inner-right">
+          <div class="section-header">
+            <svg
+              aria-label="Coinbase logo"
+              height="32"
+              role="img"
+              viewBox="0 0 48 48"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Coinbase logo</title>
+              <path
+                d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"
+                fill="#0052FF"
+              ></path>
+            </svg>
+            <h3>WALLET</h3>
+          </div>
+          <h1>Do more with your crypto with Coinbase Wallet</h1>
+          <h2>
+            Store your crypto in your own personal crypto wallet and explore
+            decentralized finance (DeFi), buy and sell NFTs, and more.
+          </h2>
+
+          <button class="btn signup-btn">Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prime Section -->
+    <section class="advanced">
+      <div class="left-advanced">
+        <img src="images/prime-section.webp" alt="hero" />
+      </div>
+
+      <div class="right-advanced">
+        <div class="inner-right">
+          <div class="section-header">
+            <svg
+              aria-label="Coinbase logo"
+              height="32"
+              role="img"
+              viewBox="0 0 48 48"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Coinbase logo</title>
+              <path
+                d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"
+                fill="#0052FF"
+              ></path>
+            </svg>
+            <h3>PRIME</h3>
+          </div>
+          <h1>The financial institution for a digital asset future</h1>
+          <h2>
+            Coinbase Prime is the first choice for sophisticated investors and
+            institutions that want to invest in digital assets.
+          </h2>
+
+          <button class="btn signup-btn">Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <div class="cards-container">
+        <div class="card">
+          <img src="images/basics-card.webp" alt="card1" />
+          <div class="card-body">
+            <h3>Secure storage</h3>
+            <p>Store your crypto in a secure & trusted platform</p>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
